@@ -27,6 +27,9 @@ echo -e "${COLOR2}GIT - Initialisation${NC}"
 # git checkout -b develop
 # git checkout -b master
 
+echo -e "${COLOR2}GIT - Don't forget to update your remote url"
+echo "https://careerkarma.com/blog/git-change-remote/"
+
 echo -e "${COLOR3}NPM - Initialisation${NC}"
 npm set init-author-email "toddsmyth91@gmail.com"
 npm set init-author-name "Todd Smyth"
@@ -54,5 +57,5 @@ echo -e "${COLOR3}NPM - Audit Fixes and Start${NC}"
 npm audit fix --force
 # npm start
 
-echo -e "${COLOR4}VSCODE - Open project in new window"
+echo -e "${COLOR5}VSCODE - Open project in new window"
 code .
