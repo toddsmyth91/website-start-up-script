@@ -22,10 +22,10 @@ git clone https://github.com/toddsmyth91/website-boilerplate.git
 cd website-boilerplate
 
 echo -e "${COLOR2}GIT - Initialisation${NC}"
-git config --global init.defaultBranch master
-git init
-git checkout -b develop
-git checkout -b master
+# git config --global init.defaultBranch master
+# git init
+# git checkout -b develop
+# git checkout -b master
 
 echo -e "${COLOR3}NPM - Initialisation${NC}"
 npm set init-author-email "toddsmyth91@gmail.com"
@@ -45,9 +45,9 @@ coverage
 " >> .prettierignore
 npx prettier --write .
 # npx onchange "**/*" -- npx prettier --write --ignore-unknown {{changed}}
-npx husky-init
-npm install --save-dev git-format-staged
-npx husky set .husky/pre-commit "git-format-staged -f 'prettier --ignore-unknown --stdin --stdin-filepath \"{}\"' ."
+# npx husky-init
+# npm install --save-dev git-format-staged
+# npx husky set .husky/pre-commit "git-format-staged -f 'prettier --ignore-unknown --stdin --stdin-filepath \"{}\"' ."
 
 echo -e "${COLOR3}NPM - Audit Fixes and Start${NC}"
 # npx browserslist@latest --update-db
