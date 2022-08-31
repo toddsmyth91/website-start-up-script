@@ -22,9 +22,10 @@ git clone https://github.com/toddsmyth91/website-boilerplate.git
 cd website-boilerplate
 
 echo -e "${COLOR2}GIT - Initialisation${NC}"
+git remote remove origin
 # git config --global init.defaultBranch master
 # git init
-# git checkout -b develop
+git checkout -b develop
 # git checkout -b master
 
 echo -e "${COLOR2}GIT - Don't forget to update your remote url"
@@ -58,4 +59,4 @@ npm audit fix --force
 # npm start
 
 echo -e "${COLOR5}VSCODE - Open project in new window"
-code .
+# code .
