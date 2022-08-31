@@ -16,9 +16,10 @@ echo -e "${COLOR1}HTML, CSS and JS - Boilerplate"
 npx create-html5-boilerplate new-site
 cd new-site
 HTML5-BOILERPLATE
-echo -e "${COLOR1}HTML, CSS and JS - Boilerplate"
-npx create-html5-boilerplate new-site
-cd new-site
+
+# import boilerplate from github
+git clone https://github.com/toddsmyth91/website-boilerplate.git
+cd website-boilerplate
 
 echo -e "${COLOR2}GIT - Initialisation${NC}"
 git config --global init.defaultBranch master
@@ -49,6 +50,9 @@ npm install --save-dev git-format-staged
 npx husky set .husky/pre-commit "git-format-staged -f 'prettier --ignore-unknown --stdin --stdin-filepath \"{}\"' ."
 
 echo -e "${COLOR3}NPM - Audit Fixes and Start${NC}"
-npx browserslist@latest --update-db
+# npx browserslist@latest --update-db
 npm audit fix --force
-npm start
+# npm start
+
+echo -e "${COLOR4}VSCODE - Open project in new window"
+code .
